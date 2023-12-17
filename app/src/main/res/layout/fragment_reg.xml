@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#00ff00"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="Roll"
+                android:inputType="number"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="Name"
+                android:inputType="text"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/clas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="Class"
+                android:inputType="number"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginTop="5dp"
+                android:text="Register"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

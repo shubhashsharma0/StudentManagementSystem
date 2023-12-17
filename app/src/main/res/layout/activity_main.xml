@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frag"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="#00ff00"
+        android:background="#000000">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/rem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/upd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entries"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+</RelativeLayout>
